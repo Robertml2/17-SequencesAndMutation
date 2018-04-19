@@ -190,7 +190,7 @@ def index_of_largest_number(numbers, n):
     # ------------------------------------------------------------------
     largest = 0
     for k in range(len(numbers)):
-        if len(numbers) <= n and (numbers[k]) > (numbers[largest]):
+        if k <= n-1 and (numbers[k]) > (numbers[largest]):
             largest = k
     return largest
 
