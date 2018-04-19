@@ -334,11 +334,14 @@ def is_palindrome(s):
     #   above are particularly good examples to work by hand.
     ####################################################################
     # ------------------------------------------------------------------
-
-    for k in range(len(s)-1):
-        if s[k] == s[k]:
-
+    number = 0
+    for k in range(len(s)):
+        if s[k] == s[-k-1]:
+            number = number + 1
+        if number == k:
+            return False
     return True
+
 
 
 
