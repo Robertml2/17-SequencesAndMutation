@@ -338,9 +338,9 @@ def is_palindrome(s):
     for k in range(len(s)):
         if s[k] == s[-k-1]:
             number = number + 1
-        if number == k:
-            return False
-    return True
+        if number == len(s):
+            return True
+    return False
 
 
 
