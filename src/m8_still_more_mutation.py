@@ -72,6 +72,12 @@ def RETURN_delete_negatives(numbers):
     #             m6_mutation.run_test(...)
     #          Then, IMPLEMENT and test THIS FUNCTION
     #          (using the above code for testing).
+    length = []
+    for k in range(numbers):
+        if numbers[k] >= 0:
+            length = length + [k]
+    return length
+
 
 
 def run_test_MUTATE_delete_negatives():

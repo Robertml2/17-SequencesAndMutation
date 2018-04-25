@@ -175,6 +175,13 @@ def RETURN_circle(circle, color):
     #          (using the above code for testing).
     #
     # HINT: Use the   clone   method to make the copy.
+    for k in range(color):
+        circle.clone()
+        circle.fill_color = color
+
+
+
+
 
 
 def run_test_MUTATE_circle():
